@@ -1,0 +1,311 @@
+/* FONT TEMPLATES */
+.main_font {
+    font-family: 'Darker Grotesque', sans-serif;
+}
+.main_font_bold {
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: 700;
+}
+.secondary_font {
+    font-family: 'Darker Grotesque', sans-serif;  
+    font-family: 'Inter', sans-serif;
+}
+.secondary_font_bold {
+    font-family: 'Darker Grotesque', sans-serif;  
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+/* NAVIGATION BAR FONT */
+.nav_font {
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration-line: none;
+}
+
+/* CONTAINER LABEL FONT */
+.cont_font {
+    font-size: 1.6vw;
+    margin: 0;
+}
+
+/* CONTAINER LABEL FONT COLORS */
+.quick_notes {
+    color: #9A97B4;
+}
+.focus {
+    color: #DDD5C5;
+}
+.pomodoros {
+    color: #9A97B4;
+}
+
+/* TIMER FONTS */
+.timer_font {
+    font-size: 12vw;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+
+/* CONTAINERS */
+body {
+    background-color: #BEBBD4;
+    row-gap: 25px;
+    margin: 0;
+}
+
+/* NAVIGATION CONTAINER */
+nav {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    height: 60px;
+}
+.settings {
+    background-color: #BEBBD4;
+}
+
+/* MAIN CONTAINER */
+main {
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.main_cont {
+    display: grid;
+    grid-template-rows: 10% 85%;
+    row-gap: 15px;
+    padding: 18px;
+    border-radius: 20px;
+    justify-items: center;
+    width: 20vw;
+    height: 18vw;
+}
+.main_cont_2 {
+    display: grid;
+    row-gap: 10px;
+}
+
+/* QUICK NOTES CONTAINER */
+.quick_notes {
+    background-color: #EAE8F1;
+    background: rgb(255, 255, 255, 0.5);
+}
+.input_todo {
+    display: flex;
+    background-color: #FFFFFF;
+    color: #9A97B4;
+    outline: none;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    float: left;
+    font-size: 14px;
+}
+.input_todo::placeholder {
+    color: #EAE8F1;
+}
+label {
+    display: block;
+    text-indent: -15px;
+  }
+.todo_list {
+    display: grid;
+    grid-template-rows: 0.5fr 9.5fr;
+    background-color: #FFFFFF;
+    overflow: auto;
+    border-radius: 0 0 15px 15px;
+    width: 100%;
+    position: relative;
+}
+/* Style the "Add" button */
+.addBtn {
+    background: none;
+    color: #BEBBD4;
+    float: right;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+/* Remove margins and padding from the list */
+.list {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: auto;
+    overflow: auto;
+}
+/* Style the list items */
+.list li {
+    margin: 0;
+    cursor: pointer;
+    list-style: none;
+    text-align: justify;
+    position: relative;
+    padding: 5px 30px 5px 15px;
+    font-size: 14px;
+    transition: 0.2s;
+    width: auto;
+    word-wrap: break-word;
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/* When clicked on, strike out text */
+.list li.checked {
+    color: #BEBBD4;
+    text-decoration: line-through;
+}
+/* Style the close button */
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 5px 0px 5px 15px;
+    padding: 0 4px 1px 4px;
+    border-radius: 15px;
+    color: #BEBBD4;
+}
+.close:hover {
+    background-color: #9A97B4;
+    color: white;
+}
+.todo_list::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+.todo_list::-webkit-scrollbar-track {
+    background: #FFFFFF;        /* color of the tracking area */
+}
+.todo_list::-webkit-scrollbar-thumb {
+    background-color: #EAE8F1;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 4px solid #FFFFFF;  /* creates padding around scroll thumb */
+}
+
+/* FOCUS TIMER CONTAINER */
+.focus_main_cont {
+    display: grid;
+    grid-template-rows: 10% 85%;
+    row-gap: 15px;
+    padding: 18px;
+    border-radius: 20px;
+    justify-items: center;
+    width: 40vw;
+    height: 35vw;
+}
+.focus {
+    background-color: #73708D;
+    display: grid;
+    justify-content: center;
+    padding: 0;
+    border-radius: 20px;
+    text-decoration: none;
+    border: 1px #BEBBD4;
+    outline: none;
+    position: relative;
+    box-sizing: border-box;
+}
+.focus:hover {
+    cursor: pointer;
+}
+.timer_cont {
+    display: flex;
+    justify-content: center;
+}
+.semicolon {
+    justify-items: center;
+    position: relative;
+}
+.main_timer {
+    align-self: center;
+}
+
+.hideTimer {
+    display: none;
+}
+
+/* SESSION TRACKER */
+.pomodoros {
+    background-color: #EAE8F1;
+    background: rgb(255, 255, 255, 0.5);
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0;
+}
+.session_tracker {
+    background-color: #FFFFFF;
+    color: #9A97B4;
+    outline: none;
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    float: left;
+    padding: 15px;
+    border-radius: 0 0 15px 15px;
+}
+.progress_tracker {
+    justify-self: flex-start;
+}
+input[type=checkbox] {
+  width: 0.9em;
+  height: 0.9em;
+  color: #73708D;
+  border-radius: 4px;
+  appearance: none;
+  background-color: #BEBBD4;
+  outline: none;
+  margin: 6px;
+}
+
+.settings {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #BEBBD4;
+}
+.__item {
+    font-size: 10px;
+    border: 0;
+    outline: none;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+} .__item:hover {
+    cursor: pointer;
+}
+
+.darkmode {
+    background-color: #BEBBD4;
+    color: #FFFFFF;
+}
+
+.darkmode__enabled,
+.darkmode__enabled * {
+    background-color: #323232;
+    color: #D9D9D9;
+}
+
+.darkmode__enabled__two {
+    background-color: #3f3f41;
+    color: #D9D9D9;
+}
+
+.darkmode__enabled__three {
+    background-color: #4F4D5D;
+    color: #D9D9D9;
+}
