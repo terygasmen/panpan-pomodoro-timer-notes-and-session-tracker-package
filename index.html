@@ -33,22 +33,22 @@
             <!--CONTAINER FOR FOCUS TIMER-->
             <div id="fullscreen" class="focus_main_cont">
                 <!--LABEL-->
-                <p class="main_font_bold cont_font">Focus</p>
+                <p class="main_font_bold cont_font" id="state">Focus</p>
                 <!--CONTAINER FOR TIMER-->
                 <div class="main_timer">
                     <div id="fcsTmr" class="timer_cont">
                         <!--FOCUS MINUTES-->
-                        <p id="focus_mins" class="secondary_font_bold timer_font focus_timer num">25</p>
+                        <p id="focus_mins" class="secondary_font_bold timer_font focus_timer number">25</p>
                         <p class="semicolon secondary_font timer_font">:</p>
                         <!--FOCUS SECONDS-->
-                        <p id="focus_secs" class="secondary_font timer_font focus_timer num">0</p>
+                        <p id="focus_secs" class="secondary_font timer_font focus_timer number">00</p>
                     </div>  
                     <div id="brkTmr"class="timer_cont hideTimer">
                         <!--BREAK MINUTES-->
-                        <p id="break_mins" class="secondary_font_bold timer_font break_timer num">5</p>
+                        <p id="break_mins" class="secondary_font_bold timer_font break_timer number">05</p>
                         <p class="semicolon secondary_font timer_font">:</p>
                         <!--BREAK SECONDS-->
-                        <p id="break_secs" class="secondary_font timer_font break_timer num">0</p>
+                        <p id="break_secs" class="secondary_font timer_font break_timer number">00</p>
                     </div>
                 </div>  
             </div>
@@ -72,7 +72,9 @@
             <div class="main_cont main_font cont_font pomodoros">
                 <p class="main_font_bold cont_font">Pomodoros</p>
                 <div class="session_tracker">
-                    <div id="counter" class="progress_tracker"></div>
+                    <div id="counter" class="progress_tracker">
+                        <!-- input box goes here -->
+                    </div>
                 </div>
             </div>
         </div>
