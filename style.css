@@ -1,19 +1,33 @@
-/* FONT TEMPLATES */
-.main_font {
-    font-family: 'Darker Grotesque', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600&family=Inter:wght@300;600&display=swap');
+
+:root {
+
+    /* font */
+    --main_font: 'Darker Grotesque', sans-serif;
+    --secondary-font: 'Inter', sans-serif;
+
+    /* color */
+    --purple: #9A97B4;
+    --lavender: #BEBBD4;
+    --light_lavender: #EAE8F1;
+    --dark_purple: #73708D;
+
+    --dark_grey: #323232;
+    --grey: #3f3f41;
+    --light_grey: #4F4D5D;
+    --light_red: #D9D9D9;
 }
-.main_font_bold {
-    font-family: 'Darker Grotesque', sans-serif;
-    font-weight: 700;
+
+/* global */
+h1 {
+    font-family: var(--main_font);
 }
-.secondary_font {
-    font-family: 'Darker Grotesque', sans-serif;  
-    font-family: 'Inter', sans-serif;
-}
-.secondary_font_bold {
-    font-family: 'Darker Grotesque', sans-serif;  
-    font-family: 'Inter', sans-serif;
+h2 {
+    font-family: var(--secondary-font);
     font-weight: 600;
+}
+p {
+    font-family: var(--secondary-font);
 }
 
 /* NAVIGATION BAR FONT */
@@ -31,26 +45,26 @@
 
 /* CONTAINER LABEL FONT COLORS */
 .quick_notes {
-    color: #9A97B4;
+    color: var(--lavender);
 }
 .focus {
-    color: #DDD5C5;
+    color: var(--light_lavender);
 }
 .pomodoros {
-    color: #9A97B4;
+    color: var(--lavender);
 }
 
 /* TIMER FONTS */
 .timer_font {
     font-size: 12vw;
-    color: #FFFFFF;
+    color: white;
     margin: 0;
 }
 
 
 /* CONTAINERS */
 body {
-    background-color: #BEBBD4;
+    background-color: var(--lavender);
     row-gap: 25px;
     margin: 0;
 }
@@ -64,7 +78,7 @@ nav {
     height: 60px;
 }
 .settings {
-    background-color: #BEBBD4;
+    background-color: var(--lavender);
 }
 
 /* MAIN CONTAINER */
@@ -97,13 +111,13 @@ main {
 
 /* QUICK NOTES CONTAINER */
 .quick_notes {
-    background-color: #EAE8F1;
+    background-color: var(--light_lavender);
     background: rgb(255, 255, 255, 0.5);
 }
 .input_todo {
     display: flex;
-    background-color: #FFFFFF;
-    color: #9A97B4;
+    background-color: white;
+    color: var(--lavender);
     outline: none;
     box-sizing: border-box;
     padding: 15px;
@@ -115,7 +129,7 @@ main {
     font-size: 14px;
 }
 .input_todo::placeholder {
-    color: #EAE8F1;
+    color: var(--light_lavender);
 }
 label {
     display: block;
@@ -124,7 +138,7 @@ label {
 .todo_list {
     display: grid;
     grid-template-rows: 0.5fr 9.5fr;
-    background-color: #FFFFFF;
+    background-color: white;
     overflow: auto;
     border-radius: 0 0 15px 15px;
     width: 100%;
@@ -133,7 +147,7 @@ label {
 /* Style the "Add" button */
 .addBtn {
     background: none;
-    color: #BEBBD4;
+    color: var(--light_lavender);
     float: right;
     text-align: center;
     font-size: 16px;
@@ -168,7 +182,7 @@ label {
 }
 /* When clicked on, strike out text */
 .list li.checked {
-    color: #BEBBD4;
+    color: var(--lavender);
     text-decoration: line-through;
 }
 /* Style the close button */
@@ -179,22 +193,22 @@ label {
     margin: 5px 0px 5px 15px;
     padding: 0 4px 1px 4px;
     border-radius: 15px;
-    color: #BEBBD4;
+    color: var(--lavender);
 }
 .close:hover {
-    background-color: #9A97B4;
+    background-color: var(--purple);
     color: white;
 }
 .todo_list::-webkit-scrollbar {
     width: 12px;               /* width of the entire scrollbar */
 }
 .todo_list::-webkit-scrollbar-track {
-    background: #FFFFFF;        /* color of the tracking area */
+    background: white;        /* color of the tracking area */
 }
 .todo_list::-webkit-scrollbar-thumb {
-    background-color: #EAE8F1;    /* color of the scroll thumb */
+    background-color: var(--light_lavender);    /* color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 4px solid #FFFFFF;  /* creates padding around scroll thumb */
+    border: 4px solid white;  /* creates padding around scroll thumb */
 }
 
 /* FOCUS TIMER CONTAINER */
@@ -209,13 +223,13 @@ label {
     height: 35vw;
 }
 .focus {
-    background-color: #73708D;
+    background-color: var(--dark_purple);
     display: grid;
     justify-content: center;
     padding: 0;
     border-radius: 20px;
     text-decoration: none;
-    border: 1px #BEBBD4;
+    border: 1px var(--lavender);
     outline: none;
     position: relative;
     box-sizing: border-box;
@@ -241,15 +255,15 @@ label {
 
 /* SESSION TRACKER */
 .pomodoros {
-    background-color: #EAE8F1;
+    background-color: var(--light_lavender);
     background: rgb(255, 255, 255, 0.5);
     margin-left: auto;
     margin-right: auto;
     margin: 0;
 }
 .session_tracker {
-    background-color: #FFFFFF;
-    color: #9A97B4;
+    background-color: white;
+    color: var(--purple);
     outline: none;
     box-sizing: border-box;
     margin: 0;
@@ -264,10 +278,10 @@ label {
 input[type=checkbox] {
   width: 0.9em;
   height: 0.9em;
-  color: #73708D;
+  color: var(--dark_purple);
   border-radius: 4px;
   appearance: none;
-  background-color: #BEBBD4;
+  background-color: var(--lavender);
   outline: none;
   margin: 6px;
 }
@@ -276,7 +290,7 @@ input[type=checkbox] {
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: #BEBBD4;
+    background-color: var(--lavender);
 }
 .__item {
     font-size: 10px;
@@ -290,22 +304,22 @@ input[type=checkbox] {
 }
 
 .darkmode {
-    background-color: #BEBBD4;
-    color: #FFFFFF;
+    background-color: var(--lavender);
+    color: white;
 }
 
 .darkmode__enabled,
 .darkmode__enabled * {
-    background-color: #323232;
-    color: #D9D9D9;
+    background-color: var(--dark_grey);
+    color: var(--light_red);
 }
 
 .darkmode__enabled__two {
-    background-color: #3f3f41;
-    color: #D9D9D9;
+    background-color: var(--grey);
+    color: var(--light_red);
 }
 
 .darkmode__enabled__three {
-    background-color: #4F4D5D;
-    color: #D9D9D9;
+    background-color: var(--light_grey);
+    color: var(--light_red);
 }

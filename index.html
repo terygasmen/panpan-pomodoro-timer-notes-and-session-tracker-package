@@ -8,12 +8,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mobilecss.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600&family=Inter:wght@300&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700&family=Inter:wght@600&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600&display=swap');
-    </style>
 </head>
 <body id="body" class='color__mode'>
 
@@ -33,22 +27,22 @@
             <!--CONTAINER FOR FOCUS TIMER-->
             <div id="fullscreen" class="focus_main_cont">
                 <!--LABEL-->
-                <p class="main_font_bold cont_font">Focus</p>
+                <h1 class="cont_font" id="state">focus</h1>
                 <!--CONTAINER FOR TIMER-->
                 <div class="main_timer">
                     <div id="fcsTmr" class="timer_cont">
                         <!--FOCUS MINUTES-->
-                        <p id="focus_mins" class="secondary_font_bold timer_font focus_timer num">25</p>
-                        <p class="semicolon secondary_font timer_font">:</p>
+                        <h2 id="focus_mins" class="timer_font focus_timer number">25</h2>
+                        <p class="semicolon timer_font">:</p>
                         <!--FOCUS SECONDS-->
-                        <p id="focus_secs" class="secondary_font timer_font focus_timer num">0</p>
+                        <p id="focus_secs" class=" timer_font focus_timer number">00</p>
                     </div>  
                     <div id="brkTmr"class="timer_cont hideTimer">
                         <!--BREAK MINUTES-->
-                        <p id="break_mins" class="secondary_font_bold timer_font break_timer num">5</p>
-                        <p class="semicolon secondary_font timer_font">:</p>
+                        <h2 id="break_mins" class="timer_font break_timer number">05</h2>
+                        <p class="semicolon  timer_font">:</p>
                         <!--BREAK SECONDS-->
-                        <p id="break_secs" class="secondary_font timer_font break_timer num">0</p>
+                        <p id="break_secs" class=" timer_font break_timer number">00</p>
                     </div>
                 </div>  
             </div>
@@ -58,11 +52,11 @@
         <div class="main_cont_2">
             <!--QUICK NOTES-->
             <div class="main_cont quick_notes">
-                <p class="main_font_bold cont_font ">Quick Notes</p>
+                <h1 class="cont_font ">quick notes</h1>
                 <div id="myDIV" class="todo_list ">
                     <label for="">
-                        <input type="text" id="myInput" class="input_todo secondary_font_bold" placeholder="add a to-do list">
-                        <span onclick="newElement()" id="enter" class="addBtn secondary_font_bold"></span>
+                        <input type="text" id="myInput" class="input_todo" placeholder="add a to-do list">
+                        <span onclick="newElement()" id="enter" class="addBtn"></span>
                     </label>
                     <ul id="myUL" class="list secondary_font_bold"></ul>
                 </div>    
@@ -70,9 +64,10 @@
             
             <!--POMODOROS-->
             <div class="main_cont main_font cont_font pomodoros">
-                <p class="main_font_bold cont_font">Pomodoros</p>
+                <h1 class="cont_font">pomodoros</h1>
                 <div class="session_tracker">
                     <div id="counter" class="progress_tracker"></div>
+                        <!-- input box goes here -->
                 </div>
             </div>
         </div>
